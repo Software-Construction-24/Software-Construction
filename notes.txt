@@ -1,1 +1,24 @@
 What is the Software develpment LifeCycle?
+
+
+Name 3 Software Companies and give their software development lifecycle. 
+
+Netflix
+The software construction life cycle used at Netflix by the edge engineering team.
+Netflix has used full-cycle development where the developers are responsible and take ownership of given aspects of service delivery such as deploying, monitoring, and maintaining the services they develop.
+Here is the process:
+
+Design. The developers actively contribute to the design process ensuring technical feasibility and user friendliness.
+They work closely with the designers, product managers, and other involved parties to create a user-centric design.
+They also carry out prototyping of designs while rotating on user feedback.
+
+Development. They write, test, and debug code and use agile methodologies such as sprints and continuous Integration to allow them to have frequent releases.
+
+Testing. In this software development cycle, the developers write unit tests to capture bugs early and improve code quality.
+Testing is also incorporated into the Continuous Integration pipeline to prevent bugs from reaching production.
+
+Deployment. Developers own the deployment process by managing infrastructure, pushing code to production environments, and carrying out frequent rollouts to deliver features faster.
+
+Operations.  The developers also monitor and maintain the software in production, as well as identify and solve issues on time.
+
+Support. In this development life cycle, developers go ahead to partake in customer support.
