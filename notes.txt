@@ -1,5 +1,18 @@
 What is the Software development LifeCycle?
+SDLC or the Software Development Life Cycle is a process that produces software with the highest quality and lowest cost in the shortest time possible.SDLC helps in improving the quality of software and easing the overall process of designing it .
+The software development lifecycle has six stages:
+These include;
+Planning. Here the development team uses input from customers , market surveys and other departments relevant to the project to  plan the project approach. 
 
+Defining .Here a Software Requirement Specification is written to define all requirements that need to be developed and designed for this project.
+
+Designing .Here the design is implemented in a detailed and organised manner to make code generation easier.
+
+Building. The product is built in this stage using the best code practices and guidelines to make debugging easier and quicker as well as to make code readable to other developers.
+
+Testing .Although testing is usually at all stages of modern software development life cycles, here we are referring to testing the stage or part of the product where a defect has been detected .
+
+Deployment. After thorough testing , the product is released in the market for consumer use. After deploymentmaintenance is done basing on user feedback and other issues that may arise.
 
 Name 3 Software Companies and give their software development lifecycle. 
 
