@@ -1,18 +1,18 @@
-What is the Software development LifeCycle?
-SDLC or the Software Development Life Cycle is a process that produces software with the highest quality and lowest cost in the shortest time possible.SDLC helps in improving the quality of software and easing the overall process of designing it .
-The software development lifecycle has six stages:
-These include;
-Planning. Here the development team uses input from customers , market surveys and other departments relevant to the project to  plan the project approach. 
+What is the Software Development LifeCycle?
+SDLC or the Software Development Life Cycle is a process that produces software with the highest quality and lowest cost in the shortest time possible.SDLC helps in improving the quality of software and easing the overall process of designing it.
 
-Defining .Here a Software Requirement Specification is written to define all requirements that need to be developed and designed for this project.
+The software development lifecycle has six stages. These include;
+Planning. Here the development team uses input from customers, market surveys, and other departments relevant to the project to  plan the project approach. 
 
-Designing .Here the design is implemented in a detailed and organised manner to make code generation easier.
+Defining. Here a Software Requirement Specification is written to define all requirements that need to be developed and designed for this project.
+
+Designing. Here the design is implemented in a detailed and organised manner to make code generation easier.
 
 Building. The product is built in this stage using the best code practices and guidelines to make debugging easier and quicker as well as to make code readable to other developers.
 
-Testing .Although testing is usually at all stages of modern software development life cycles, here we are referring to testing the stage or part of the product where a defect has been detected .
+Testing. Although testing is usually at all stages of modern software development life cycles, here we are referring to testing the stage or part of the product where a defect has been detected.
 
-Deployment. After thorough testing , the product is released in the market for consumer use. After deploymentmaintenance is done basing on user feedback and other issues that may arise.
+Deployment. After thorough testing, the product is released in the market for consumer use. After deployment, maintenance is done based on user feedback and other issues that may arise.
 
 Name 3 Software Companies and give their software development lifecycle. 
 
@@ -55,7 +55,7 @@ Test
 The development team combines automation and manual testing to check the software for bugs. Quality analysis includes testing the software for errors and checking if it meets customer requirements. Because many teams immediately test the code they write, the testing phase often runs parallel to the development phase.
 
 Deploy
-When teams develop software, they code and test on a different copy of the software than the one that the users have access to. The software that customers use is called production, while other copies are said to be in the build environment, or testing environment.
+When teams develop software, they code and test on a different copy of the software than the one that the users have access to. The software that customers use is called production, while other copies are said to be in the build environment or testing environment.
 Having separate build and production environments ensures that customers can continue to use the software even while it is being changed or upgraded. The deployment phase includes several tasks to move the latest build copy to the production environment, such as packaging, environment configuration, and installation.
 
 Maintain
@@ -66,11 +66,11 @@ Spotify's SDLC is particularly interesting as it deviates from traditional frame
 
 
 SDLC Phases:
-1.Ideation and Planning: Squads identify opportunities and define goals, with input from stakeholders. User needs and data heavily influence planning.
+1. Ideation and Planning: Squads identify opportunities and define goals, with input from stakeholders. User needs and data heavily influence planning.
 
-2.Development: Agile practices like sprints and backlog prioritization are common. Frequent releases and iterations based on user feedback are encouraged.
+2. Development: Agile practices like sprints and backlog prioritization are common. Frequent releases and iterations based on user feedback are encouraged.
 
-3.Deployment and Operations: Features are deployed gradually through automated pipelines, minimizing risk and disruption. Continuous monitoring and feedback loops ensure smooth operations.
+3. Deployment and Operations: Features are deployed gradually through automated pipelines, minimizing risk and disruption. Continuous monitoring and feedback loops ensure smooth operations.
 
 Key Principles:
 Autonomy: Squads own their decisions and execution, fostering ownership and innovation.
