@@ -60,3 +60,21 @@ Having separate build and production environments ensures that customers can con
 
 Maintain
 In the maintenance phase, among other tasks, the team fixes bugs, resolves customer issues, and manages software changes. In addition, the team monitors overall system performance, security, and user experience to identify new ways to improve the existing software.
+
+SPOTIFY
+Spotify's SDLC is particularly interesting as it deviates from traditional frameworks and takes a more "culture-based" approach focused on autonomy, communication, accountability, and quality. While agile principles heavily influence their process, they don't adhere to any single methodology, favoring flexibility and adaptation. Here's a breakdown of key aspects:
+
+
+SDLC Phases:
+1.Ideation and Planning: Squads identify opportunities and define goals, with input from stakeholders. User needs and data heavily influence planning.
+
+2.Development: Agile practices like sprints and backlog prioritization are common. Frequent releases and iterations based on user feedback are encouraged.
+
+3.Deployment and Operations: Features are deployed gradually through automated pipelines, minimizing risk and disruption. Continuous monitoring and feedback loops ensure smooth operations.
+
+Key Principles:
+Autonomy: Squads own their decisions and execution, fostering ownership and innovation.
+Communication: Collaboration and knowledge sharing are actively encouraged through various channels.
+Accountability: Squads are responsible for their deliverables and track progress through data and metrics.
+Quality: Continuous feedback loops, automated testing, and code reviews ensure high standards.
+Security:
