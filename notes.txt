@@ -77,4 +77,8 @@ Autonomy: Squads own their decisions and execution, fostering ownership and inno
 Communication: Collaboration and knowledge sharing are actively encouraged through various channels.
 Accountability: Squads are responsible for their deliverables and track progress through data and metrics.
 Quality: Continuous feedback loops, automated testing, and code reviews ensure high standards.
+
+
 Security:
+-Integrated throughout the SDLC, with tools like Snyk scanning code for vulnerabilities.
+-Security champions in guilds raise awareness and promote best practices.
