@@ -1,5 +1,5 @@
 --- disk_usage_original.py	2024-01-31 23:30:51.410805400 +0300
-+++ disk_usage_fixed.py	2024-01-31 23:06:13.507612900 +0300
++++ disk_usage_fixed.py	2024-01-31 23:51:11.469590300 +0300
 @@ -1,6 +1,7 @@
  #!/usr/bin/env python3
  
