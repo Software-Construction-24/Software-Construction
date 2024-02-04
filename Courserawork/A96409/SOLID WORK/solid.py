@@ -9,3 +9,14 @@ class ReportGenerator:
 class BonusCalculator:
     def calculate_bonus(self, employee):
         return employee.calculate_bonus()
+# {LSP}
+class Employee:
+    def calculate_bonus(self):
+        pass
+
+class Manager(Employee):
+    def calculate_bonus(self):
+        return 1000
+
+    def manage_team(self):
+        print(f"{self.name} is managing the team.")
