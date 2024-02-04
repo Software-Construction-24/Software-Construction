@@ -32,3 +32,15 @@ class Developer(Employee):
 
     def code_review(self):
         print(f"{self.name} is conducting a code review.")
+
+# Interface Segregation Principle (ISP) for workable class 
+class Workable:
+    def work(self):
+        pass
+
+class Eatable:
+    def eat(self):
+        pass
+
+class Worker(Workable, Eatable):
+    pass
