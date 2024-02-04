@@ -61,7 +61,14 @@ if __name__ == "__main__":
     manager = Manager("Alice", "Manager")
     developer = Developer("Bob", "Developer")
 
-    # SRP
+    # SRP refactor
     report_generator = ReportGenerator()
     report_generator.generate_report(manager)
     report_generator.generate_report(developer)
+
+       # OCP refactor
+    bonus_calculator = BonusCalculator()
+    manager_bonus = bonus_calculator.calculate_bonus(manager)
+    developer_bonus = bonus_calculator.calculate_bonus(developer)
+    print(f"Manager Bonus: ${manager_bonus}")
+    print(f"Developer Bonus: ${developer_bonus}")
