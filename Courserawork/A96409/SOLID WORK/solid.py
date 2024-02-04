@@ -31,3 +31,15 @@ class Eatable:
 
 class Worker(Workable, Eatable):
     pass
+# Dip refactor
+class Switchable:
+    def turn_on(self):
+        pass
+
+class Switch:
+    def __init__(self, device):
+        self.device = device
+
+    def operate(self):
+        self.device.turn_on()
+
