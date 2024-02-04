@@ -73,6 +73,6 @@ if __name__ == "__main__":
     print(f"Manager Bonus: ${manager_bonus}")
     print(f"Developer Bonus: ${developer_bonus}")
 
-      # LSP
+      # LSP refactor
     manager.manage_team()
     developer.code_review()
