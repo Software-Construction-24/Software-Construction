@@ -57,3 +57,10 @@ class ReportGenerator:
     def generate_report(self, employee, report_writer):
         report_writer.write_report(employee)
 
+# Refactored Code for LSP in develper class
+class Developer(Employee):
+    def calculate_bonus(self):
+        return 500
+
+    def code_review(self):
+        print(f"{self.name} is conducting a code review.")
