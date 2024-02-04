@@ -20,3 +20,14 @@ class Manager(Employee):
 
     def manage_team(self):
         print(f"{self.name} is managing the team.")
+# (ISP Refactored)
+class Workable:
+    def work(self):
+        pass
+
+class Eatable:
+    def eat(self):
+        pass
+
+class Worker(Workable, Eatable):
+    pass
