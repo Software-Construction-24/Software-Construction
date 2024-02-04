@@ -57,6 +57,12 @@ class ReportGenerator:
     def generate_report(self, employee, report_writer):
         report_writer.write_report(employee)
 
+
+#OCP refactoring for bonus calculator
+class BonusCalculator:
+    def calculate_bonus(self, employee):
+        return employee.calculate_bonus_amount()
+    
 # Refactored Code for LSP in develper class
 class Developer(Employee):
     def calculate_bonus(self):
