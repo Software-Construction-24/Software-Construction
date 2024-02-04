@@ -43,3 +43,17 @@ class Switch:
     def operate(self):
         self.device.turn_on()
 
+
+# SRP part 2
+class ManagerReportWriter:
+    def write_report(self, manager):
+        print(f"Manager Report: {manager.name}")
+
+class DeveloperReportWriter:
+    def write_report(self, developer):
+        print(f"Developer Report: {developer.name}")
+
+class ReportGenerator:
+    def generate_report(self, employee, report_writer):
+        report_writer.write_report(employee)
+
