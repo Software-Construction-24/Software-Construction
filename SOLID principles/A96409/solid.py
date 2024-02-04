@@ -56,3 +56,12 @@ class Switch:
 
     def operate(self):
         self.device.turn_on()
+
+if __name__ == "__main__":
+    manager = Manager("Alice", "Manager")
+    developer = Developer("Bob", "Developer")
+
+    # SRP
+    report_generator = ReportGenerator()
+    report_generator.generate_report(manager)
+    report_generator.generate_report(developer)
