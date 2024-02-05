@@ -1,3 +1,4 @@
+#Sarah Nsereko A96409
 # Single Responsibility Principle (SRP) fro Report generator class
 class ReportGenerator:
     def generate_report(self, employee):
