@@ -1,21 +1,18 @@
 class UserAuthentication:
-    def __init__(self):
-        pass
-    
-    def login(self, username, password):
-        # Authentication logic
-        if username == "admin" and password == "admin":
-            return True
-        else:
-            return False
+    DEFAULT_USERNAME = "admin"
+    DEFAULT_PASSWORD = "admin"
 
-    def register(self, username, password, email):
-        # Registration logic
+    @staticmethod
+    def perform_login(username, password):
+        """Authenticate user."""
+        return username == UserAuthentication.DEFAULT_USERNAME and password == UserAuthentication.DEFAULT_PASSWORD
+
+    @staticmethod
+    def register(username, password, email):
+        """Register a new user."""
         if len(password) < 8:
             return "Password must be at least 8 characters long"
-        else:
-            return "User registered successfully"
-
+        return "User registered successfully"
 
 # Original code for data manipulation module
 class DataManipulation:
