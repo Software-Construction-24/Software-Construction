@@ -14,7 +14,6 @@ class UserAuthentication:
             return "Password must be at least 8 characters long"
         return "User registered successfully"
 
-# Original code for data manipulation module
 class DataManipulation:
     def __init__(self):
         pass
@@ -24,7 +23,7 @@ class DataManipulation:
         processed_data = [item.upper() for item in data]
         return processed_data
 
-# Original code for API integration module
+
 class APIIntegration:
     def __init__(self):
         pass
@@ -36,7 +35,7 @@ class APIIntegration:
         else:
             return None
 
-# Original usage example
+
 if __name__ == "__main__":
     # Initialize modules
     auth = UserAuthentication()
@@ -44,8 +43,8 @@ if __name__ == "__main__":
     api = APIIntegration()
 
     # Test user authentication
-    print(auth.login("admin", "admin"))  # True
-    print(auth.login("user", "password"))  # False
+    print(auth.perform_login("admin", "admin"))  # True
+    print(auth.perform_login("user", "password"))  # False
 
     # Test data manipulation
     print(data_processor.process_data(["apple", "banana", "orange"]))  # ['APPLE', 'BANANA', 'ORANGE']
