@@ -1,4 +1,3 @@
-# Original code for user authentication module
 class UserAuthentication:
     def __init__(self):
         pass
