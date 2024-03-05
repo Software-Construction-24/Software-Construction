@@ -1,7 +1,7 @@
 class UserManager:
   """Manages user authentication and data processing."""
 
-  def _init_(self):
+  def __init__(self):
     self.users = {}  # Empty dictionary to store user data (YAGNI)
 
   def is_valid_password(self, password):
@@ -26,11 +26,20 @@ class UserManager:
     return [item.upper() for item in data]
 
 # Original code for API integration module (unchanged)
-
+class APIIntegration:
+  def __init__(self):
+    pass
+  def fetch_data_from_api(self, endpoint): # API integration logic
+    if endpoint == "/users":
+      return ["user1", "user2", "user3"]
+    else:
+      return None
+    
 # Original usage example (modified)
-if _name_ == "_main_":
+if __name__ == "__main__":
   # Initialize user manager
   user_manager = UserManager()
+  api = APIIntegration()
 
   # Test user authentication
   print(user_manager.authenticate("admin", "admin"))  # True
