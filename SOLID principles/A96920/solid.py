@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
 
 class Employee:
-    def _init_(self, name, role):
+    def __init__(self, name, role):
         self.name = name
         self.role = role
 
 class Report:
-    def _init_(self, report_writer):
+    def __init__(self, report_writer):
         self.report_writer = report_writer
 
     def generate_report(self, employee):
@@ -54,7 +54,7 @@ class Developer(Employee):
     def code_review(self):
         print(f"{self.name} is conducting a code review.")
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     manager = Manager("Alice", "Manager")
     developer = Developer("Bob", "Developer")
 
