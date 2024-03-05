@@ -1,4 +1,3 @@
-
 import unittest
 from calculator import Calculator
 
@@ -32,6 +31,21 @@ class TestCalculator(unittest.TestCase):
         calc = Calculator()
         with self.assertRaises(ValueError):
             calc.divide(10, 0)
+
+    def test_power(self):
+        calc = Calculator()
+        result = calc.power(2, 3)
+        self.assertEqual(result, 8)  # 2^3 = 8
+
+    def test_factorial(self):
+        calc = Calculator()
+        result = calc.factorial(5)
+        self.assertEqual(result, 120)  # 5! = 120
+
+    def test_factorial_negative(self):
+        calc = Calculator()
+        with self.assertRaises(ValueError):
+            calc.factorial(-1)
 
 
 if __name__ == '__main__':

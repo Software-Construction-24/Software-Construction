@@ -30,5 +30,19 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.calc.divide(10, 0)
 
+    def test_power(self):
+        self.assertEqual(self.calc.power(2,3), 8)  # 2^3 = 8
+        self.assertEqual(self.calc.power(3,2), 9)  # 3^2 = 9
+        
+
+    def test_factorial(self):
+        self.assertEqual(self.calc.factorial(0), 1)  # 0! = 1
+        self.assertEqual(self.calc.factorial(1), 1)  # 1! = 1
+        self.assertEqual(self.calc.factorial(5), 120)  # 5! = 5 * 4 * 3 * 2 * 1 = 120
+
+    def test_factorial_negative(self):
+        with self.assertRaises(ValueError):
+            self.calc.factorial(-1)
+
 if __name__ == '__main__':
     unittest.main()
