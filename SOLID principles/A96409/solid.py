@@ -1,79 +1,75 @@
 #Sarah Nsereko A96409
-# Single Responsibility Principle (SRP) fro Report generator class
-class ReportGenerator:
-    def generate_report(self, employee):
-        if employee.role == "Manager":
-            print(f"Manager Report: {employee.name}")
-        elif employee.role == "Developer":
-            print(f"Developer Report: {employee.name}")
-# Open/Closed Principle (OCP) for Bonus Calculator class
-class BonusCalculator:
-    def calculate_bonus(self, employee):
-        return employee.calculate_bonus_amount()
-    
-# Liskov Substitution Principle (LSP) for employee class
+from abc import ABC, abstractmethod
+
 class Employee:
-    def __init__(self, name, role):
+    def _init_(self, name, role):
         self.name = name
         self.role = role
 
+class Report:
+    def _init_(self, report_writer):
+        self.report_writer = report_writer
+
+    def generate_report(self, employee):
+        self.report_writer.write_report(employee)
+
+class ReportWriter(ABC):
+    @abstractmethod
+    def write_report(self, employee):
+        pass
+
+class ManagerReportWriter(ReportWriter):
+    def write_report(self, manager):
+        print(f"Manager Report: {manager.name}")
+
+class DeveloperReportWriter(ReportWriter):
+    def write_report(self, developer):
+        print(f"Developer Report: {developer.name}")
+
+class EmployeeBonusCalculator(ABC):
+    @abstractmethod
     def calculate_bonus(self):
         pass
 
-class Manager(Employee):
+class ManagerBonusCalculator(EmployeeBonusCalculator):
     def calculate_bonus(self):
         return 1000
+
+class DeveloperBonusCalculator(EmployeeBonusCalculator):
+    def calculate_bonus(self):
+        return 500
+
+class Manager(Employee):
+    def calculate_bonus(self):
+        calculator = ManagerBonusCalculator()
+        return calculator.calculate_bonus()
 
     def manage_team(self):
         print(f"{self.name} is managing the team.")
 
 class Developer(Employee):
     def calculate_bonus(self):
-        return 500
+        calculator = DeveloperBonusCalculator()
+        return calculator.calculate_bonus()
 
     def code_review(self):
         print(f"{self.name} is conducting a code review.")
 
-# Interface Segregation Principle (ISP) for workable class 
-class Workable:
-    def work(self):
-        pass
-
-class Eatable:
-    def eat(self):
-        pass
-
-class Worker(Workable, Eatable):
-    pass
-
-# Dependency Inversion Principle (DIP) for switchable class
-class Switchable:
-    def turn_on(self):
-        pass
-
-class Switch:
-    def __init__(self, device):
-        self.device = device
-
-    def operate(self):
-        self.device.turn_on()
-
-if __name__ == "__main__":
+if _name_ == "_main_":
     manager = Manager("Alice", "Manager")
     developer = Developer("Bob", "Developer")
 
-    # SRP refactor
-    report_generator = ReportGenerator()
+    report_writer = ManagerReportWriter()  # Choose appropriate report writer
+    report_generator = Report(report_writer)
     report_generator.generate_report(manager)
     report_generator.generate_report(developer)
 
-       # OCP refactor
     bonus_calculator = BonusCalculator()
-    manager_bonus = bonus_calculator.calculate_bonus(manager)
-    developer_bonus = bonus_calculator.calculate_bonus(developer)
+    manager_bonus = manager.calculate_bonus()
+    developer_bonus = developer.calculate_bonus()
+
     print(f"Manager Bonus: ${manager_bonus}")
     print(f"Developer Bonus: ${developer_bonus}")
 
-      # LSP refactor
     manager.manage_team()
     developer.code_review()
